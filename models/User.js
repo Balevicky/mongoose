@@ -6,7 +6,8 @@ const userSchema = new Schema({
   firstname: { type: String, requered: true },
   lastname: String,
   age: { type: Number, min: 0, max: 199 },
-});
+},
+{timestamps:true});
 
 module.exports = mongoose.model("User", userSchema);
 // module.exports = mongoose.Model("User", userSchema);
